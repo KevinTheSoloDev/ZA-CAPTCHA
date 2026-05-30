@@ -1,1 +1,50 @@
+project:
+  name: "Flower Icon Recognition"
+  version: "1.0.0"
+  num_classes: 24
 
+model:
+  type: "MobileNetV2"
+  image_size: 224
+  batch_size: 32
+  epochs: 50
+
+dataset:
+  path: "dataset/"
+  min_images_per_class: 50
+  valid_extensions:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+
+# Name these after your actual flowers
+classes:
+  - flower1
+  - flower2
+  - flower3
+  - flower4
+  - flower5
+  - flower6
+  - flower7
+  - flower8
+  - flower9
+  - flower10
+  - flower11
+  - flower12
+  - flower13
+  - flower14
+  - flower15
+  - flower16
+  - flower17
+  - flower18
+  - flower19
+  - flower20
+  - flower21
+  - flower22
+  - flower23
+  - flower24
+
+paths:
+  models: "models/"
+  logs: "logs/"
+  results: "results/"
